@@ -17,6 +17,8 @@ gradlew.bat server [windows]
 ## 4. 安装gradle
 ## 5. 启动watch
 ```bash
+cd ui
+
 npm install –g gulp
 npm install --save-dev gulp-install gulp babel
 npm install autoprefixer
@@ -41,6 +43,14 @@ npm install webpack-hot-middleware
 npm install fs
 npm install lodash
 npm install lodash.merge
-cd ui
+
 gulp watch
+```
+需要改造js中import的ES6语法为ES5语法：
+```javascript
+import gulp from 'gulp';
+```
+为
+```javascript
+const gulp = require('gulp');
 ```
