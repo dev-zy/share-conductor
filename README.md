@@ -21,6 +21,7 @@ cd ui
 
 npm install –g gulp
 npm install --save-dev gulp-install gulp babel
+npm install gulp-env
 npm install autoprefixer
 npm install gulp-eslint
 npm install rimraf
