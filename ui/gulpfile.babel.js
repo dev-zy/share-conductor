@@ -25,6 +25,7 @@ const autoprefixer = require('autoprefixer');
 const eslint = require('gulp-eslint');
 const rimraf = require('rimraf');
 const browserSync = require('browser-sync');
+const reload = require('browser-sync');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const nested = require('postcss-nested');
