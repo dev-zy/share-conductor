@@ -19,7 +19,7 @@ gradlew.bat server [windows]
 ```bash
 cd ui
 
-npm install –g gulp
+npm install gulp –g
 npm install --save-dev gulp-install gulp babel
 npm install gulp-env
 npm install autoprefixer
