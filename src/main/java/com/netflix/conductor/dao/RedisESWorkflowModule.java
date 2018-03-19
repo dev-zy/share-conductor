@@ -19,15 +19,13 @@ package com.netflix.conductor.dao;
  */
 
 import com.google.inject.AbstractModule;
-import com.netflix.conductor.dao.ExecutionDAO;
-import com.netflix.conductor.dao.IndexDAO;
-import com.netflix.conductor.dao.MetadataDAO;
-import com.netflix.conductor.dao.QueueDAO;
 import com.netflix.conductor.dao.dynomite.RedisExecutionDAO;
 import com.netflix.conductor.dao.dynomite.RedisMetadataDAO;
 import com.netflix.conductor.dao.dynomite.queue.DynoQueueDAO;
-import com.netflix.conductor.dao.index.ElasticSearchDAO;
-import com.netflix.conductor.dao.index.ElasticsearchModule;
+//import com.netflix.conductor.dao.es.index.ElasticSearchDAO;
+//import com.netflix.conductor.dao.es.index.ElasticsearchModule;
+import com.netflix.conductor.dao.es5.index.ElasticSearchDAO;  
+import com.netflix.conductor.dao.es5.index.ElasticsearchModule;
 
 /**
  * @author Viren

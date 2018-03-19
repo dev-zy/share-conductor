@@ -18,11 +18,15 @@
  */
 package com.netflix.conductor.dao.index.query.parser;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import org.junit.Test;
+
+//import com.netflix.conductor.dao.es.index.query.parser.BooleanOp;
+//import com.netflix.conductor.dao.es.index.query.parser.ParserException;
+import com.netflix.conductor.dao.es5.index.query.parser.BooleanOp;
+import com.netflix.conductor.dao.es5.index.query.parser.ParserException;
 /**
  * @author Viren
  *

@@ -37,7 +37,9 @@ public class Main {
 		
 		if(args.length == 2) {
 			System.out.println("Using log4j config " + args[1]);
-			PropertyConfigurator.configure(new FileInputStream(new File(args[1])));
+			Properties properties = new Properties();
+			properties.load(new FileInputStream(new File(args[1])));
+			PropertyConfigurator.configure(properties);
 		}
 
 		ConductorConfig config = new ConductorConfig();

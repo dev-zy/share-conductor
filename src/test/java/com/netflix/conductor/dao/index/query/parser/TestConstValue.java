@@ -18,11 +18,23 @@
  */
 package com.netflix.conductor.dao.index.query.parser;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
+
+//import com.netflix.conductor.dao.es.index.query.parser.ConstValue;
+//import com.netflix.conductor.dao.es.index.query.parser.ListConst;
+//import com.netflix.conductor.dao.es.index.query.parser.ParserException;
+//import com.netflix.conductor.dao.es.index.query.parser.Range;
+
+import com.netflix.conductor.dao.es5.index.query.parser.ConstValue;
+import com.netflix.conductor.dao.es5.index.query.parser.ListConst;
+import com.netflix.conductor.dao.es5.index.query.parser.ParserException;
+import com.netflix.conductor.dao.es5.index.query.parser.Range;
 
 /**
  * @author Viren

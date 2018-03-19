@@ -65,7 +65,8 @@ import com.netflix.conductor.common.run.Workflow;
 import com.netflix.conductor.common.run.Workflow.WorkflowStatus;
 import com.netflix.conductor.config.TestConfiguration;
 import com.netflix.conductor.core.config.Configuration;
-import com.netflix.conductor.dao.index.ElasticSearchDAO;
+//import com.netflix.conductor.dao.es.index.ElasticSearchDAO;
+import com.netflix.conductor.dao.es5.index.ElasticSearchDAO; 
 import com.netflix.conductor.dao.redis.JedisMock;
 
 import redis.clients.jedis.JedisCommands;

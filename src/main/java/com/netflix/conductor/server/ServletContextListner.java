@@ -18,6 +18,7 @@
  */
 package com.netflix.conductor.server;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -84,7 +85,9 @@ public class ServletContextListner extends GuiceServletContextListener {
 			key = "log4j_properties";
 			String log4jConfig = Optional.ofNullable(System.getProperty(key)).orElse(System.getenv(key));
 			if(log4jConfig != null) {
-				PropertyConfigurator.configure(new FileInputStream(log4jConfig));
+				Properties properties = new Properties();
+				properties.load(new FileInputStream(log4jConfig));
+				PropertyConfigurator.configure(properties);
 			}
 			
 		} catch (Exception e) {

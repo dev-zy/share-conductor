@@ -19,6 +19,7 @@ package com.netflix.conductor.config;
  */
 
 
+import java.util.HashMap;
 import java.util.Map;
 
 import com.netflix.conductor.core.config.Configuration;
@@ -28,7 +29,7 @@ import com.netflix.conductor.core.config.Configuration;
  *
  */
 public class TestConfiguration implements Configuration {
-
+	private Map<String, Object> map = new HashMap<String, Object>();
 	@Override
 	public int getSweepFrequency() {
 		return 1;
@@ -68,6 +69,9 @@ public class TestConfiguration implements Configuration {
 	public String getProperty(String string, String def) {
 		return "dummy";
 	}
+	public void setProperty(String key, Object value) {
+		map.put(key, value);
+	}
 	
 	@Override
 	public String getAvailabilityZone() {
@@ -86,6 +90,6 @@ public class TestConfiguration implements Configuration {
 	
 	@Override
 	public Map<String, Object> getAll() {
-		return null;
+		return map;
 	}
 }
