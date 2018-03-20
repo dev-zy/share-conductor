@@ -21,6 +21,7 @@ cd ui
 
 npm install gulp –g
 npm install --save-dev gulp-install gulp babel
+npm install --save-dev babel-preset-es2015
 npm install gulp-env
 npm install autoprefixer
 npm install gulp-eslint
