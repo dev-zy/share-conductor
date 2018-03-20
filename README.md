@@ -16,6 +16,7 @@ gradlew.bat server [windows]
 ## 3. 安装node.js
 ## 4. 安装gradle
 ## 5. 启动watch
+#### 1）方式一
 ```bash
 cd ui
 
@@ -47,8 +48,7 @@ npm install lodash.merge
 
 gulp watch
 ```
-注：支持ES6语法
-- 需要改造js中import的ES6语法为ES5语法：
+需要改造js中import的ES6语法为ES5语法：
 ```javascript
 import gulp from 'gulp';
 ```
@@ -56,7 +56,13 @@ import gulp from 'gulp';
 ```javascript
 const gulp = require('gulp');
 ```
-- 安装ES6的babel
+#### 2）方式二
 ```bash
+cd ui
+
+npm install gulp –g
+npm install --save-dev gulp-install gulp babel
 npm install --save-dev babel-preset-es2015
+
+gulp watch
 ```
