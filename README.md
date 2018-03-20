@@ -21,7 +21,6 @@ cd ui
 
 npm install gulp –g
 npm install --save-dev gulp-install gulp babel
-npm install --save-dev babel-preset-es2015
 npm install gulp-env
 npm install autoprefixer
 npm install gulp-eslint
@@ -48,11 +47,16 @@ npm install lodash.merge
 
 gulp watch
 ```
-需要改造js中import的ES6语法为ES5语法：
+注：支持ES6语法
+- 需要改造js中import的ES6语法为ES5语法：
 ```javascript
 import gulp from 'gulp';
 ```
 为
 ```javascript
 const gulp = require('gulp');
+```
+- 安装ES6的babel
+```bash
+npm install --save-dev babel-preset-es2015
 ```
