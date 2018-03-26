@@ -56,13 +56,23 @@ import gulp from 'gulp';
 ```javascript
 const gulp = require('gulp');
 ```
-#### 2）方式二
+#### 2）方式二（已验证）
+```bash
+cd ui
+
+npm install gulp@3.9.0 –g
+npm install --save-dev gulp-install gulp@3.9.0 babel
+npm install --save-dev babel-preset-es2015
+
+gulp watch
+```
+#### 3）方式三
 ```bash
 cd ui
 
 npm install gulp –g
 npm install --save-dev gulp-install gulp babel
-npm install --save-dev babel-preset-es2015
+npm install --save-dev babel-cli babel-preset-es2017
 
 gulp watch
 ```
