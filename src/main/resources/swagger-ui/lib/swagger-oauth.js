@@ -83,7 +83,7 @@ function handleLogin() {
     top = (dh -dlgHt)/2 + st,
     left = (dw - dlgWd)/2;
 
-  popupDialog.css({
+  popupDialog.share({
     top: (top < 0? 0 : top) + 'px',
     left: (left < 0? 0 : left) + 'px'
   });

@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ucloudlink.css</groupId>
-  <artifactId>css-conductor</artifactId>
+  <groupId>com.devzy.share</groupId>
+  <artifactId>share-conductor</artifactId>
   <version>1.0</version>
-  <name>css-conductor</name>
-  <description>css-conductor</description>
+  <name>share-conductor</name>
+  <description>share-conductor</description>
   <properties>
         <java.version>1.8</java.version>
         <project.source.encoding>UTF-8</project.source.encoding>
@@ -85,23 +85,31 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>[1.2.15,)</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>io.nats</groupId>
+		    <artifactId>jnats</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.nats</groupId>
+		    <artifactId>java-nats-streaming</artifactId>
+		    <version>0.5.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-sqs</artifactId>
-			<version>[1.11.264,)</version>
+			<version>1.11.292</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
-			<version>[4.1.0,)</version>
+			<version>4.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.inject.extensions</groupId>
 			<artifactId>guice-servlet</artifactId>
-			<version>[4.1.0,)</version>
+			<version>4.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>net.thisptr</groupId>
@@ -158,12 +166,12 @@
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
-			<version>5.6.3</version>
+			<version>5.6.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elasticsearch.client</groupId>
 			<artifactId>transport</artifactId>
-			<version>5.6.3</version>
+			<version>5.6.8</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -220,12 +228,12 @@
 		<dependency>
 			<groupId>com.netflix.dyno</groupId>
 			<artifactId>dyno-jedis</artifactId>
-			<version>[1.5.9,)</version>
+			<version>1.5.9</version>
 		</dependency>
 		<dependency>
 			<groupId>com.netflix.dyno-queues</groupId>
 			<artifactId>dyno-queues-redis</artifactId>
-			<version>[1.0.8,)</version>
+			<version>1.0.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.rarefiedredis.redis</groupId>

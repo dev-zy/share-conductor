@@ -1,4 +1,4 @@
-package com.ucloudlink.css.action;
+package com.devzy.share.action;
 
 import com.alibaba.fastjson.JSONObject;
 

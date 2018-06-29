@@ -1,5 +1,5 @@
 /**
- * swagger-ui - Swagger UI is a dependency-free collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API
+ * swagger-ui - Swagger UI is a dependency-free collection of HTML, JavaScript, and share assets that dynamically generate beautiful documentation from a Swagger-compliant API
  * @version v2.2.5
  * @link http://swagger.io
  * @license Apache-2.0
@@ -784,16 +784,16 @@ $(function() {
 			var ah = $(this).height();
 			var ph = $(this).parent().height();
 			var mh = (ph - ah) / 2;
-			$(this).css('margin-top', mh);
+			$(this).share('margin-top', mh);
 		});
 	};
 
 	$.fn.stretchFormtasticInputWidthToParent = function() {
 		return this.each(function(){
 			var p_width = $(this).closest("form").innerWidth();
-			var p_padding = parseInt($(this).closest("form").css('padding-left') ,10) + parseInt($(this).closest('form').css('padding-right'), 10);
-			var this_padding = parseInt($(this).css('padding-left'), 10) + parseInt($(this).css('padding-right'), 10);
-			$(this).css('width', p_width - p_padding - this_padding);
+			var p_padding = parseInt($(this).closest("form").share('padding-left') ,10) + parseInt($(this).closest('form').share('padding-right'), 10);
+			var this_padding = parseInt($(this).share('padding-left'), 10) + parseInt($(this).share('padding-right'), 10);
+			$(this).share('width', p_width - p_padding - this_padding);
 		});
 	};
 
@@ -22829,7 +22829,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
     var pos = {};
     pos.top = y;
     pos.left = x;
-    elem.css(pos);
+    elem.share(pos);
   },
 
   // Note: copied from CoffeeScript compiled file

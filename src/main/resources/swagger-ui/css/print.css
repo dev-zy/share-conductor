@@ -90,7 +90,7 @@
 .swagger-section pre .title,
 .swagger-section pre .built_in,
 .swagger-section pre .aggregate,
-.swagger-section pre .css .tag,
+.swagger-section pre .share .tag,
 .swagger-section pre .javadoctag,
 .swagger-section pre .phpdoc,
 .swagger-section pre .yardoctag,
@@ -116,7 +116,7 @@
 .swagger-section pre .tex .formula,
 .swagger-section pre .xml .javascript,
 .swagger-section pre .xml .vbscript,
-.swagger-section pre .xml .css,
+.swagger-section pre .xml .share,
 .swagger-section pre .xml .cdata {
   opacity: 0.5;
 }

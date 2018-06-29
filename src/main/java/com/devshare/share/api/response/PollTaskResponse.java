@@ -1,7 +1,7 @@
-package com.ucloudlink.css.api.response;
+package com.devzy.share.api.response;
 
 import com.alibaba.fastjson.JSONObject;
-import com.ucloudlink.css.api.TaskApiConstant;
+import com.devzy.share.api.TaskApiConstant;
 
 public class PollTaskResponse {
 	private String taskType;//task_1

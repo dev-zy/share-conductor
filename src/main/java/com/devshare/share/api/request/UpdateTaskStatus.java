@@ -1,7 +1,7 @@
-package com.ucloudlink.css.api.request;
+package com.devzy.share.api.request;
 
 import com.alibaba.fastjson.JSONObject;
-import com.ucloudlink.css.api.TaskApiConstant;
+import com.devzy.share.api.TaskApiConstant;
 
 public class UpdateTaskStatus {
 	private String workflowInstanceId;
