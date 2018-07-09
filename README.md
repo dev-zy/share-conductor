@@ -1,4 +1,4 @@
-# css-conductor
+# share-conductor
 ## 1. gradle-wrapper.properties（\gradle\wrapper）
 ```properties
 distributionBase=GRADLE_USER_HOME
